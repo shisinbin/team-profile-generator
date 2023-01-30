@@ -62,9 +62,9 @@ The HTML file that is rendered by the app is responsive to different screen size
 
 ## Limitations and Future Enhancements
 
-1. Module Import: Currently, the app uses the older require() method for importing modular files. Future enhancements may include switching to the newer import syntax.
+1. Module Import: Currently, the app uses the older `require()` method for importing modular files. Future enhancements may include switching to the newer `import` syntax.
 2. Asynchronous Operations: The app handles asynchronous operations using promise chaining. An enhancement could be to use the async-await method for improved readability and simplicity.
-3. Limited features: The app is currently limited to adding information about three roles in a single team once. Enhancements could include the ability to add more roles, to edit stored data, and to add information about multiple teams.
+3. Limited Features: The app is currently limited to adding information about three roles in a single team once. Future improvements could include the ability to add more roles, to edit stored data, and to add information about multiple teams.
 
 ## Tests
 
