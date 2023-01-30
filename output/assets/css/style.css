@@ -1,0 +1,147 @@
+/* variables */
+:root {
+  --welcome-background: #9ececa;
+  --background: #e5e4e4;
+  --img-background: #dadada;
+  --hover: #df5b57;
+}
+
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  text-decoration: none;
+}
+
+/* base styles */
+body{
+  background: var(--background);
+  font-family: 'Source Code Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+li{
+  list-style-type: none;
+}
+
+a {
+  border-bottom: 2px dotted #333;
+}
+
+a:hover {
+  color: var(--hover);
+  border-bottom: 2px dotted var(--hover);
+}
+
+/* fonts */
+h1 {
+  font-size: 1.8em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.2em;
+}
+h4 {
+  font-size: 1em;
+}
+p {
+  font-size: 0.9em;
+}
+
+/* mobile styles */
+#welcome {
+  background: var(--welcome-background);
+  text-align: center;
+  padding: 50px 20px;
+}
+#welcome h1 {
+  color: #fff;
+}
+#welcome h4 {
+  font-style: italic;
+}
+#welcome .welcome-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+#team ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 15px auto 60px;
+}
+
+#team .member-card {
+  margin: 15px;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+#team .member-card .member-card-header {
+  padding: 15px;
+  background: var(--img-background);
+  display: flex;
+  justify-content: space-between;
+}
+
+#team .member-card .member-card-header .name-role {
+  line-height: 2em;
+}
+
+#team .member-card .member-card-header .img-role {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#team .member-card .member-card-body {
+  padding: 15px;
+  background: #fff;
+  line-height: 2em;
+  flex-grow: 1;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+
+  #team ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #team .member-card {
+    grid-column: span 1;
+  }
+
+}
+
+/* large tablet and laptop styles */
+@media screen and (min-width: 960px) {
+
+  body {
+    font-size: 18px;
+  }
+  
+  #team ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+
+  #team ul {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+  }
+
+}
