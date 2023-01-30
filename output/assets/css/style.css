@@ -38,7 +38,7 @@ a:hover {
   border-bottom: 2px dotted var(--highlight);
 }
 
-/* font sizing */
+/* custom font sizing */
 h1 {
   font-size: 1.8em;
 }
@@ -61,12 +61,15 @@ p {
   text-align: center;
   padding: 50px 20px;
 }
+
 #welcome h1 {
   color: #fff;
 }
+
 #welcome h4 {
   font-style: italic;
 }
+
 #welcome .welcome-text {
   display: flex;
   flex-direction: column;
