@@ -1,16 +1,17 @@
 /* variables */
 :root {
-  --welcome-background: #9ececa;
+  --primary: #9ececa;
   --background: #e5e4e4;
-  --img-background: #dadada;
-  --hover: #df5b57;
+  --header-background: #dadada;
+  --highlight: #df5b57;
+  --text: #333;
 }
 
 /* resets */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: none;
+  box-sizing: border-box;
   text-decoration: none;
 }
 
@@ -20,6 +21,7 @@ body{
   font-family: 'Source Code Pro', sans-serif;
   display: flex;
   flex-direction: column;
+  color: var(--text);
 }
 
 li{
@@ -27,15 +29,16 @@ li{
 }
 
 a {
-  border-bottom: 2px dotted #333;
+  color: var(--text);
+  border-bottom: 2px dotted var(--text);
 }
 
 a:hover {
-  color: var(--hover);
-  border-bottom: 2px dotted var(--hover);
+  color: var(--highlight);
+  border-bottom: 2px dotted var(--highlight);
 }
 
-/* fonts */
+/* font sizing */
 h1 {
   font-size: 1.8em;
 }
@@ -54,7 +57,7 @@ p {
 
 /* mobile styles */
 #welcome {
-  background: var(--welcome-background);
+  background: var(--primary);
   text-align: center;
   padding: 50px 20px;
 }
@@ -70,12 +73,14 @@ p {
   gap: 20px;
 }
 
-
 #team ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   flex-direction: column;
   width: 100%;
   margin: 15px auto 60px;
+  max-width: 1400px;
 }
 
 #team .member-card {
@@ -83,11 +88,16 @@ p {
   box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
   display: flex;
   flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+}
+
+#team .member-card:hover {
+  transform: scale(1.06);
 }
 
 #team .member-card .member-card-header {
   padding: 15px;
-  background: var(--img-background);
+  background: var(--header-background);
   display: flex;
   justify-content: space-between;
 }
@@ -98,7 +108,7 @@ p {
 
 #team .member-card .member-card-header .img-role {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
 
@@ -113,12 +123,11 @@ p {
 @media screen and (min-width: 620px) {
 
   #team ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
   }
 
   #team .member-card {
-    grid-column: span 1;
+    flex: 0 0 44%;
   }
 
 }
@@ -130,8 +139,8 @@ p {
     font-size: 18px;
   }
   
-  #team ul {
-    grid-template-columns: repeat(3, 1fr);
+  #team .member-card {
+    flex: 0 0 26%;
   }
 
 }
@@ -139,9 +148,8 @@ p {
 /* desktop styles */
 @media screen and (min-width: 1200px) {
 
-  #team ul {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 1400px;
+  #team .member-card {
+    flex: 0 0 20%;
   }
 
 }
