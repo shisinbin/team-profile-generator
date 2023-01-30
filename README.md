@@ -72,7 +72,7 @@ To run the basic tests, in your terminal run `npm test`.
 
 ## Contribution
 
-If you're excited about this project and want to get involved, we'd love to have you! Here are a few ways you can contribute:
+If you're excited about this project and want to get involved, that'd be awesome! Here are a few ways you can contribute:
 
 1. Fork the repository and create a pull request with your changes.
 2. Submit an issue to report bugs or request new features.
