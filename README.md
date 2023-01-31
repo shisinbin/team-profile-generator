@@ -56,7 +56,7 @@ In this project, I gained experience in:
 
 ## Features
 
-The HTML file that is rendered by the app is responsive to different screen sizes.
+The HTML file rendered by the app is designed to adapt to various screen sizes for a responsive display.
 
 <p style="text-align:left">
 <img width="50%" src="img/responsive.gif" alt="screenshot image of app in action">
