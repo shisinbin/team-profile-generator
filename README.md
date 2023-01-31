@@ -54,6 +54,13 @@ In this project, I gained experience in:
 - Generating dynamic webpages using stored data, array methods, and template literals.
 - Styling webpages with a mobile-first approach using CSS.
 
+### Challenges
+
+- Asynchronous operations: Struggled to add a menu after page render, likely due to lack of understanding of promises.
+- Flexbox: Had difficulty getting items to take a specific percentage of container width. Tried using flex-basis and box-sizing, but realised margin wasn't factored in.
+
+Recommend future study of JavaScript promises and CSS Flexbox.
+
 ## Features
 
 The HTML file rendered by the app is designed to adapt to various screen sizes for a responsive display.
@@ -64,9 +71,9 @@ The HTML file rendered by the app is designed to adapt to various screen sizes f
 
 ## Limitations and Future Enhancements
 
-1. Module Import: Currently, the app uses the older `require()` method for importing modular files. Future enhancements may include switching to the newer `import` syntax.
+1. Module Import: Currently, the app uses the older `require()` method for importing modular files. So a future enhancement could be to switch to the newer `import` syntax.
 2. Asynchronous Operations: The app handles asynchronous operations using promise chaining. An enhancement could be to use the async-await method for improved readability and simplicity.
-3. Limited Features: The app is currently limited to adding information about three roles in a single team once. Future improvements could include the ability to add more roles, to edit stored data, and to add information about multiple teams.
+3. Limited Features: The app is currently limited to adding information for only three roles in a single team once. Future improvements could include the ability to add more roles, edit stored data, and to add information about multiple teams.
 
 ## Tests
 
@@ -90,10 +97,22 @@ If you have any questions or suggestions, feel free to contact me via [email](ma
 
 ## Credits
 
+The color scheme and layout for the rendered HTML file were influenced by [The Correspondent website](https://thecorrespondent.com/correspondents).
+
+<p style="text-align:left">
+<img width="50%" src="img/ss4.png" alt="screenshot image of app in action">
+</p>
+
+Other credits:
+
 - <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
 - <a href="https://www.npmjs.com/package/inquirer" target="_blank">Inquirer</a>
 - <a href="https://www.npmjs.com/package/jest" target="_blank">Jest</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" target="_blank">Classes - JavaScript [Mozilla]</a>
+- <a href="https://fonts.google.com/specimen/Source+Code+Pro" target="_blank">Source Code Pro [Google Fonts]</a>
+- <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9hH1tAjyUPZPjbj-7s200a4" target="_blank">Mobile-First Responsive Build by The Net Ninja [YouTube]</a>
+- <a href="https://blog.hubspot.com/marketing/creative-agency-team-pages" target="_blank">20 Best 'Meet the Team' Pages We've Ever Seen by Karla Hesterberg [HubSpot]</a>
+- <a href="https://stackoverflow.com/a/45059944" target="_blank">Flex items not respecting margins and box-sizing: border-box [Stack Overflow]</a>
 
 <p align="right">
   <a href="#top">Back to top</a>
