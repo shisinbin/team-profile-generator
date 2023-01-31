@@ -29,13 +29,15 @@ A Node.js command-line application that takes in information about members in a 
 3. Run `npm i` to install dependencies
 4. Run `node index.js` to start the app
 
-Upon starting the app, you will be prompted to enter details about the manager. A menu will then appear, giving you options to add details about engineers and interns.
+### Using the app
+
+Upon starting the app, you will be prompted to enter basic information about a manager. Afterwards, a menu will appear, giving you options to add details about either an engineer or an intern.
 
 <p style="text-align:left">
 <img width="50%" src="img/ss2.png" alt="screenshot image of app in action">
 </p>
 
-You can add an unlimited number of engineers and interns. To complete building the team, select the "Finish building team" option. This will render the HTML file in the output folder and end the app.
+Information about an unlimited number of engineers and interns can be added. Once finished, selecting the "Finish building team" option will render the desired HTML file in the `output` folder and end the app.
 
 <p style="text-align:left">
 <img width="50%" src="img/ss3.png" alt="screenshot image of app in action">
@@ -45,7 +47,7 @@ You can add an unlimited number of engineers and interns. To complete building t
 
 In this project, I gained experience in:
 
-- Building Node.js apps with a modular file structure, where each module performs a specific task.
+- Building a Node.js app with a modular file structure, where each module performs a specific task.
 - Creating objects using class structures, with a focus on inheritance.
 - Implementing unit testing to aid app development.
 - Validating user input using regular expressions.
